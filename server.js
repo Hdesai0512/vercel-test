@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello, world!')
 })
 
+app.get('/', (req, res) => {
+    res.send('About Page')
+  })
+
 const PORT = process.env.PORT
 
 app.listen(PORT, console.log(`listening on port ${PORT}`))
