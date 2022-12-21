@@ -7,7 +7,7 @@ const app = express()
 //middleware
 app.use(express.json())
 
-app.use('/vehicle', vechileRoutes)
+app.use('/vehicle', vehicleRoutes)
 
 
 app.get('/', (req, res) => {
