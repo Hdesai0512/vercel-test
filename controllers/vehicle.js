@@ -3,12 +3,12 @@ const Vehicle = require('../models/vehicle')
 
 
 router.get('/', async (req, res) =>{
-    const vechiles = await Vechile.find()
+    const vehicles = await Vehicle.find()
     res.json(vehicles)
 })
 
 router.post('/', async (req,res) =>{
-    const vechicle = await new Vehicle(req.body).save()
+    const vehicle = await new Vehicle(req.body).save()
     res.json(vehicle)
 })
 
