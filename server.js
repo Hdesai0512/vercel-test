@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const vechileRoutes = require('./controllers/vehicle')
+const vehicleRoutes = require('./controllers/vehicle')
 require('dotenv').config()
 const app = express()
 
